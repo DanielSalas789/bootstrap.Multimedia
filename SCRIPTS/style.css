@@ -1,0 +1,31 @@
+/* Animación de derecha a izquierda */
+.navbar {
+    transform: translateX(100%);
+    transition: transform .45s ease-in-out;
+}
+
+/* Aplicar animación al cargar la página */
+.navbar.show {
+    transform: translateX(0);
+}
+
+/* Carrusel en modo oscuro */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro semitransparente para el texto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo personalizado para las imágenes del carrusel */
+.carousel-item img {
+    object-fit: cover;
+    height: 600px;
+    /* Puedes cambiar esta altura según tu diseño */
+    width: 100%;
+}
+
+/* Indicadores en color claro */
+.carousel-indicators [data-bs-target] {
+    background-color: #a9ffcb;
+}
