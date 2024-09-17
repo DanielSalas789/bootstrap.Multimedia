@@ -1,13 +1,54 @@
 /* Animación de derecha a izquierda */
 .navbar {
     transform: translateX(100%);
-    transition: transform .45s ease-in-out;
+    transition: transform .45s ease-in-out, background-color 0.5s ease-in-out;
+    background-color: rgb(98, 161, 92);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
+
+body {
+    padding-top: 70px;
+    /* Ajusta este valor según la altura de tu navbar */
+}
+
+
+.navbar-brand {
+
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: font-size 1.5s ease-in-out;
+
+}
+
+
+/* Navbar con fondo sólido al hacer scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Color al hacer scroll */
+}
+
 
 /* Aplicar animación al cargar la página */
 .navbar.show {
     transform: translateX(0);
 }
+
+/* Estilo para que todas las imágenes tengan el mismo tamaño */
+.card-img-top {
+    height: 200px;
+    /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    /* Esto asegura que la imagen no se distorsione */
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+}
+
 
 /* Carrusel en modo oscuro */
 .carousel-caption {
@@ -24,6 +65,9 @@
     /* Puedes cambiar esta altura según tu diseño */
     width: 100%;
 }
+
+/* Tipografias */
+
 
 /* Indicadores en color claro */
 .carousel-indicators [data-bs-target] {
