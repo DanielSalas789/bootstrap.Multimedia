@@ -5,9 +5,9 @@ body {
     padding-top: 70px;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(50deg, #0f7528, #32b848, #1b2c1f, #145374);
+    background: linear-gradient(50deg, #0d5966, rgb(17, 112, 39), #145374);
     /* Un degradado con tonos oscuros de azul y verde */
-    color: #fff7f7;
+    color: #000000;
     /* Color de texto claro para contrastar con el fondo oscuro */
 }
 
